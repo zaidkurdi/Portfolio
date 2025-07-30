@@ -69,10 +69,26 @@ app-skills {
   }
 }
 
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* responsiveness */
+
 @media (max-width: 710px) {
   nav > * {
     font-size: 15px !important;
     margin: 0 12px !important;
+  }
+
+  .footer {
+    font-size: 13px !important;
+    margin: 20px 0 !important;
   }
 }
 
@@ -94,7 +110,6 @@ app-skills {
   .background {
     filter: blur(3px) !important;
     position: absolute;
-    top: 0;
   }
 
   .content {
@@ -113,7 +128,6 @@ app-skills {
 @media (max-width: 535px) {
   .background {
     position: absolute;
-    top: 0;
   }
 
   .content {
@@ -128,12 +142,15 @@ app-skills {
     font-size: 13px !important;
     margin: 0 9px !important;
   }
+
+  .contacts > * {
+    font-size: 17px !important;
+  }
 }
 
 @media (max-width: 410px) {
   .background {
     position: absolute;
-    top: 0;
   }
 
   .content {
@@ -147,11 +164,15 @@ app-skills {
   .action-button {
     font-size: 17px !important;
   }
+
+  .contacts > * {
+    font-size: 14px !important;
+  }
 }
 
 @media (max-width: 375px) {
   nav > * {
-    font-size: 13px !important;
-    margin: 0 5px !important;
+    font-size: 11px !important;
+    margin: 0 3px !important;
   }
 }
