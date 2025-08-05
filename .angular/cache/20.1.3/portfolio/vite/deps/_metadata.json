@@ -1,37 +1,64 @@
 {
-  "hash": "ac379750",
-  "configHash": "2866ccc5",
-  "lockfileHash": "c3eeb5c3",
-  "browserHash": "78de49c4",
+  "hash": "ddfce574",
+  "configHash": "49dd0717",
+  "lockfileHash": "e67e75df",
+  "browserHash": "92acdae5",
   "optimized": {
+    "@angular/animations": {
+      "src": "../../../../../../node_modules/@angular/animations/fesm2022/animations.mjs",
+      "file": "@angular_animations.js",
+      "fileHash": "6c7177c5",
+      "needsInterop": false
+    },
     "@angular/core": {
       "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "f1b96cd6",
+      "fileHash": "239fc578",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "c190a069",
+      "fileHash": "14fcce41",
+      "needsInterop": false
+    },
+    "@angular/platform-browser/animations": {
+      "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/animations.mjs",
+      "file": "@angular_platform-browser_animations.js",
+      "fileHash": "7171416a",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "966ec17a",
+      "fileHash": "82642387",
+      "needsInterop": false
+    },
+    "swiper/element/bundle": {
+      "src": "../../../../../../node_modules/swiper/swiper-element-bundle.mjs",
+      "file": "swiper_element_bundle.js",
+      "fileHash": "5372d3ed",
       "needsInterop": false
     },
     "zone.js": {
       "src": "../../../../../../node_modules/zone.js/fesm2015/zone.js",
       "file": "zone__js.js",
-      "fileHash": "7a593b52",
+      "fileHash": "78e790b8",
       "needsInterop": true
     }
   },
   "chunks": {
-    "chunk-XCOPYIMB": {
-      "file": "chunk-XCOPYIMB.js"
+    "chunk-AF2G6JWQ": {
+      "file": "chunk-AF2G6JWQ.js"
+    },
+    "chunk-7R335IKT": {
+      "file": "chunk-7R335IKT.js"
+    },
+    "chunk-SEKQFWZP": {
+      "file": "chunk-SEKQFWZP.js"
+    },
+    "chunk-F3ZAYVWS": {
+      "file": "chunk-F3ZAYVWS.js"
     },
     "chunk-SYHEP3OL": {
       "file": "chunk-SYHEP3OL.js"

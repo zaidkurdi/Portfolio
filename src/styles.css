@@ -1,3 +1,7 @@
+:root {
+  --primary-color: rgb(56, 123, 255);
+}
+
 * {
   font-family: Saira;
   color: white;
@@ -27,48 +31,6 @@ app-skills {
   width: 100%;
 }
 
-@media (max-width: 1270px) {
-  p {
-    font-size: 20px !important;
-  }
-}
-
-@media (max-width: 1125px) {
-  .background {
-    width: 250px !important;
-  }
-
-  p {
-    font-size: 17px !important;
-  }
-}
-
-@media (max-width: 1050px) {
-  h1 {
-    font-size: 48px;
-  }
-}
-
-@media (max-width: 980px) {
-  p {
-    font-size: 15px !important;
-  }
-
-  .skills-grid {
-    grid-template-columns: 1fr !important;
-  }
-}
-
-@media (max-width: 790px) {
-  .background {
-    width: 200px !important;
-  }
-
-  p {
-    font-size: 14px !important;
-  }
-}
-
 * {
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -80,8 +42,99 @@ app-skills {
 
 /* responsiveness */
 
+@media (max-width: 1270px) {
+  p {
+    font-size: 20px !important;
+  }
+
+  .project-description {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1125px) {
+  .background {
+    width: 250px !important;
+  }
+
+  p {
+    font-size: 17px !important;
+  }
+
+  .project-description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1050px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  .right {
+    padding: 0 10px !important;
+  }
+}
+
+@media (max-width: 980px) {
+  p {
+    font-size: 15px !important;
+  }
+
+  .project-description {
+    font-size: 12px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .card {
+    padding: 15px;
+    flex-direction: column;
+  }
+
+  .card h3 {
+    margin-bottom: 5px !important;
+  }
+}
+
+@media (max-width: 900px) {
+  nav * {
+    font-size: 17px !important;
+    margin: 0 14px !important;
+  }
+}
+
+@media (max-width: 790px) {
+  .background {
+    width: 200px !important;
+  }
+
+  p {
+    font-size: 14px !important;
+  }
+
+  .project-description {
+    font-size: 11px;
+  }
+
+  nav * {
+    font-size: 16px !important;
+    margin: 0 12px !important;
+  }
+
+  .card .button {
+    margin: 8px 0 !important;
+  }
+}
+
 @media (max-width: 710px) {
-  nav > * {
+  body {
+    margin: 0 60px !important;
+  }
+
+  .menu > * {
     font-size: 15px !important;
     margin: 0 12px !important;
   }
@@ -90,13 +143,17 @@ app-skills {
     font-size: 13px !important;
     margin: 20px 0 !important;
   }
+
+  .card {
+    padding: 15px !important;
+  }
+
+  .card .button {
+    padding: 5px 8px !important;
+  }
 }
 
 @media (max-width: 650px) {
-  body {
-    margin: 0 60px !important;
-  }
-
   h1 {
     font-size: 40px;
   }
@@ -110,6 +167,11 @@ app-skills {
   .background {
     filter: blur(3px) !important;
     position: absolute;
+  }
+
+  .menu > * {
+    font-size: 14px !important;
+    margin: 0 6px !important;
   }
 
   .content {
@@ -138,13 +200,52 @@ app-skills {
     font-size: 20px !important;
   }
 
-  nav > * {
+  .menu > * {
     font-size: 13px !important;
-    margin: 0 9px !important;
+    margin: 0 5px !important;
   }
 
   .contacts > * {
     font-size: 17px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .card .button {
+    font-size: 13px !important;
+  }
+
+  .menu {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-20px);
+  }
+
+  .menu > * {
+    font-size: 2px !important;
+  }
+
+  .open-menu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 30px;
+    right: 70px;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 10;
+  }
+
+  .toggle-menu {
+    display: block !important;
   }
 }
 
@@ -161,7 +262,7 @@ app-skills {
     margin: 0 40px !important;
   }
 
-  .action-button {
+  .buttons button {
     font-size: 17px !important;
   }
 
@@ -169,10 +270,10 @@ app-skills {
     font-size: 14px !important;
   }
 }
-
+/* 
 @media (max-width: 375px) {
-  nav > * {
+  .menu > * {
     font-size: 11px !important;
     margin: 0 3px !important;
   }
-}
+} */

@@ -1,10 +1,13 @@
 <header>
-  <div class="logo">ZAID.</div>
+  <div class="logo">ZAID<span>;</span></div>
 
-  <nav>
-    <a routerLink="/">Home</a>
-    <a routerLink="/about">About</a>
-    <a routerLink="/skills">Skills</a>
-    <a routerLink="/contact">Contact</a>
+  <nav [class]="openMenu ? 'open-menu' : ''" class="menu">
+    <a (click)="close()" routerLink="/">Home</a>
+    <a (click)="close()" routerLink="/about">About</a>
+    <a (click)="close()" routerLink="/projects">Projects</a>
+    <a (click)="close()" routerLink="/skills">Skills</a>
+    <a (click)="close()" routerLink="/contact">Contact</a>
   </nav>
+
+  <button (click)="open()" class="toggle-menu">☰</button>
 </header>

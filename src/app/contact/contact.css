@@ -8,6 +8,12 @@
 
 .links img:hover {
   transform: scale(1.2);
+  filter: brightness(0) saturate(100%) invert(60%) sepia(100%) saturate(1000%)
+    hue-rotate(164deg) brightness(100%);
+}
+
+.links {
+  padding-left: 10px;
 }
 
 ul > * {

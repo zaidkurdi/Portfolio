@@ -9,19 +9,29 @@ button {
   width: fit-content;
   background-color: white;
   color: black;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 7px;
   font-size: 22px;
   cursor: pointer;
   padding: 0 7px;
   transition: all 0.5s;
+  margin: 0 5px;
 }
 
 button:hover {
   background-color: black;
-  border: 1px solid white;
+  border: 2px solid var(--primary-color);
   color: white;
   padding: 0 10px;
+  box-shadow: 0 0 20px var(--primary-color);
+}
+
+h1 strong {
+  color: var(--primary-color);
+}
+
+.links {
+  padding-left: 10px;
 }
 
 .links > * {
@@ -34,4 +44,5 @@ button:hover {
 
 .links img:hover {
   transform: scale(1.2);
+  filter:brightness(0) saturate(100%) invert(60%) sepia(100%) saturate(1000%) hue-rotate(164deg) brightness(100%)
 }

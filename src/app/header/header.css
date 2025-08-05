@@ -12,10 +12,15 @@ header > * {
   transition: all 0.5s;
 }
 
+.logo span {
+  color: var(--primary-color);
+}
+
 .logo:hover,
 a:hover {
   transform: scale(1.1);
   font-weight: 500;
+  color: var(--primary-color);
 }
 
 nav {
@@ -29,4 +34,17 @@ a {
   margin: 0 20px;
   font-size: 20px;
   transition: all 0.5s;
+}
+
+.toggle-menu {
+  display: none;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.open-menu > * {
+  font-size: 15px !important;
 }

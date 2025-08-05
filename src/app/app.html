@@ -1,10 +1,17 @@
 <div class="container">
   <app-header></app-header>
   <div class="content">
-    <div class="component">
-      <router-outlet></router-outlet>
-    </div>
-    <img class="background" src="assets/background/image.png" alt="error" />
+    <main [@fadeAnimation]="prepareRoute(outlet)" class="component">
+      <router-outlet #outlet="outlet"></router-outlet>
+    </main>
+    <img
+      class="background"
+      src="assets/background/background2.png"
+      alt="error"
+    />
+  </div>
+  <div class="ambiant-container">
+    <div class="ambiant"></div>
   </div>
   <app-footer></app-footer>
 </div>
